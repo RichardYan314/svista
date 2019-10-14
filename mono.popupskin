@@ -150,7 +150,7 @@ object
 	type avatar
 	x 12
 	y 10+title.height+2
-	w 35
+	w 100
 	proportional 1
 end
 
