@@ -1,0 +1,182 @@
+w 1+icon.width+1+title.width+1+4+clock.width+11 > 11+avatar.width+0+text.width+11
+h 11+title.height+4+(avatar.height>text.height)+9
+
+object
+	type bitmap
+	source back.png
+	x 0
+	y 0
+	w window.width
+	h window.height
+end
+
+object
+	type bitmap
+	source topleft.png
+	x 0
+	y 0
+	w 11
+	h 11
+end
+
+object
+	type bitmap
+	source top.png
+	x 11
+	y 0
+	w window.width-11-11
+	h 11
+end
+
+object
+	type bitmap
+	source topright.png
+	x window.width-11
+	y 0
+	w 11
+	h 11
+end
+
+object
+	type bitmap
+	source titleleft.png
+	x 0
+	y 11
+	w 11
+	h title.height+5
+end
+
+object
+	type bitmap
+	source title.png
+	x 11
+	y 11
+	w window.width-11-11
+	h title.height+5
+end
+
+object
+	type bitmap
+	source titleright.png
+	x window.width-11
+	y 11
+	w 11
+	h title.height+5
+end
+
+object
+        ifset 1
+	type bitmap
+	source line.png
+        layer
+	y title.height+4
+        x 11
+        w window.width-11-11
+end
+
+object
+	type bitmap
+	source back.png
+#	mono
+	x 11
+	y 11+title.height
+	w window.width-11-11
+	h window.height-11-title.height
+end
+
+object
+        ifset 1
+	type bitmap
+	source back2.png
+#	mono
+	x 11
+	y 11+title.height
+	w window.width-11-11
+	h window.height-11-title.height
+end
+
+object
+	type bitmap
+	source left.png
+	x 0
+	y 11+title.height+5
+	w 11
+	h window.height-11-title.height-5
+end
+
+object
+	type bitmap
+	source right.png
+	x window.width-11
+	y 11+title.height+5
+	w 11
+	h window.height-11-title.height-5
+end
+
+object
+	type bitmap
+	source bottomleft.png
+	x 0
+	y window.height-11
+	w 11
+	h 11
+end
+
+object
+	type bitmap
+	source bottom.png
+	x 11
+	y window.height-11
+	w window.width-11-11
+	h 11
+end
+
+object
+	type bitmap
+	source bottomright.png
+	x window.width-11
+	y window.height-11
+	w 11
+	h 11
+end
+
+object
+	type icon
+	x 6
+	y 6
+end
+
+object
+	type avatar
+	x 12
+	y 10+title.height+2
+	w 35
+	proportional 1
+end
+
+object
+	type title
+	color 255 255 255
+	x 11+icon.width+1
+	y 8
+	w window.width-(11+icon.width+3)-4-clock.width-4
+end
+
+object
+	type text
+        color 0 0 0
+	x 12+avatar.width+2
+	y 12+title.height+0
+	w window.width-15-35-0-15
+	h window.height
+end
+
+object
+        ifset 1
+	type text
+        color 255 255 255
+	x 12+avatar.width+2
+	y 12+title.height+0
+	w window.width-15-35-0-15
+	h window.height
+end
